@@ -6,7 +6,7 @@ Sensorsdata is a leading China-based and rapidly growing big data company and in
 
 ## Dataset description
 
-Data is given as txt file whereas data is in JSON format. Dataset contains cache log information of Sensorsdata main webpage for a week, including actions on leaving the webpage, click a button, send verification code, apply for account, and etc. 
+Data is given as txt file whereas data is in JSON format. Dataset contains cache log information of Sensorsdata main webpage for a week, including actions on leaving the webpage, click a button, send verification code, apply for account, and etc.   
 Please refer to Log Description for detailed description: https://github.com/will-zw-wang/Sensors_Data/tree/master/log_description
 
 ## Project objects
