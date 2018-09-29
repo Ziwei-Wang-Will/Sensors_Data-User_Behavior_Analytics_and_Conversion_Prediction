@@ -1,6 +1,6 @@
 # Sensors_Data
 
-![alt text](https://github.com/will-zw-wang/Sensors_Data/blob/master/Senskrs_Data_Image.jpg| width=100)
+![alt text](https://github.com/will-zw-wang/Sensors_Data/blob/master/Senskrs_Data_Image.jpg | width=100)
 
 ## Project overview
 
