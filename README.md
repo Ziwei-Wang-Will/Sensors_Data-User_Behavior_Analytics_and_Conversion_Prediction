@@ -1,6 +1,6 @@
 # Sensors_Data
 
-<img src="https://github.com/will-zw-wang/Sensors_Data/blob/master/Senskrs_Data_Image.jpg">
+<img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Sensors_Data_Image.jpg">
 
 ## Project Objectives
 
