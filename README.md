@@ -1,5 +1,7 @@
 # Sensors_Data
 
+![alt text](https://github.com/will-zw-wang/Sensors_Data/blob/master/Senskrs_Data_Image.jpg)
+
 ## Project overview
 
 Sensorsdata is a leading China-based and rapidly growing big data company and interested in User-behavior Analytics and Conversion Prediction. To help explore this question, they have provided log data containing tens of thousands of log information of Sensorsdata main webpage for a week. 
