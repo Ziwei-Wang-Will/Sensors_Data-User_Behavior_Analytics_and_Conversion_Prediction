@@ -14,13 +14,14 @@ Please refer to Log Description for detailed description: https://github.com/wil
 ## Analysis Structure
 
 1. Log Data Processing
-2. 
+2. EDA
 
 
 ## Analysis Details
 
 ### 1. Log Data Processing
 
-- Funnel Analysis:
-page view(32620) -> btnClick(13866) -> click_send_cellphone(600) -> verify_cellphone_code(563) -> clickSubmit(513) -> formSubmit(791)
-It seems that most users did not attempt to submit a form
+- Identify types of events
+- Identify properties of events
+- Select related properties to generate Dataframe
+**Details**: https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/Log%20Data%20Processing.ipynb
