@@ -1,4 +1,4 @@
-# Sensors_Data
+# Sensors_Data - User-behavior Analytics and Conversion Prediction
 
 <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Sensors_Data_Image.jpg">
 
@@ -20,8 +20,14 @@ Log Description for detailed description please refer to: https://github.com/wil
 ## Analysis Details
 
 ### 1. Log Data Processing
-
 - Identify types of events
 - Identify properties of events
 - Select related properties to generate Dataframe
 - Details please refer to: https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/Log%20Data%20Processing.ipynb
+
+### 1. EDA
+- Select identifier
+- Numeric variables
+  - **page_stayTime**: Only 11.41 % of the people who clicked the functional pages stayed more than 3 seconds
+- Categorical variables
+- Select features
