@@ -9,7 +9,7 @@ Sensorsdata is a leading China-based and rapidly growing big data company and in
 ## Dataset Description
 
 Data is given as txt file whereas data is in JSON format. Dataset contains cache log information of Sensorsdata main webpage for a week, including actions on leaving the webpage, click a button, send verification code, apply for account, etc.   
-Please refer to Log Description for detailed description: https://github.com/will-zw-wang/Sensors_Data/tree/master/log_description
+Log Description for detailed description please refer to: https://github.com/will-zw-wang/Sensors_Data/tree/master/log_description
 
 ## Analysis Structure
 
@@ -24,4 +24,4 @@ Please refer to Log Description for detailed description: https://github.com/wil
 - Identify types of events
 - Identify properties of events
 - Select related properties to generate Dataframe
-**Details**: https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/Log%20Data%20Processing.ipynb
+- Details please refer to: https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/Log%20Data%20Processing.ipynb
