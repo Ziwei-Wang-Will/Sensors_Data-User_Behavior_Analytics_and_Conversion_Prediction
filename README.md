@@ -2,22 +2,25 @@
 
 <img src="https://github.com/will-zw-wang/Sensors_Data/blob/master/Senskrs_Data_Image.jpg">
 
-## Project overview
+## Project Objectives
 
 Sensorsdata is a leading China-based and rapidly growing big data company and interested in User-behavior Analytics and Conversion Prediction. To help explore this question, they have provided log data containing tens of thousands of log information of Sensorsdata main webpage for a week. 
 
-## Dataset description
+## Dataset Description
 
 Data is given as txt file whereas data is in JSON format. Dataset contains cache log information of Sensorsdata main webpage for a week, including actions on leaving the webpage, click a button, send verification code, apply for account, etc.   
 Please refer to Log Description for detailed description: https://github.com/will-zw-wang/Sensors_Data/tree/master/log_description
 
-## Project objects
+## Analysis Structure
 
-● Clean dirty log data and transform it for analytics.  
-● Exploratory data analysis, e.g. find user activity levels for different events, and user interaction with web components.  
-● Find the conversion rate of users, identify key factors that bottleneck the conversion rate.  
-● Propose any hypothesis and set up experiments for testing.  
-● Build machine learning models to predict user behaviors, including but not limited to signup, churn, etc.  
-● Discover interesting insights in the dataset and suggest how to improve the user signup rate.  
+1. Log Data Processing
+2. 
 
 
+## Analysis Details
+
+### 1. Log Data Processing
+
+- Funnel Analysis:
+page view(32620) -> btnClick(13866) -> click_send_cellphone(600) -> verify_cellphone_code(563) -> clickSubmit(513) -> formSubmit(791)
+It seems that most users did not attempt to submit a form
