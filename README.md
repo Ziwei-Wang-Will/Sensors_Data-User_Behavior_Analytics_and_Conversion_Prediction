@@ -1,6 +1,6 @@
 # Sensors_Data
 
-<img src="https://github.com/will-zw-wang/Sensors_Data/blob/master/Senskrs_Data_Image.jpg" height="342" width="669">
+<img src="https://github.com/will-zw-wang/Sensors_Data/blob/master/Senskrs_Data_Image.jpg">
 
 ## Project overview
 
