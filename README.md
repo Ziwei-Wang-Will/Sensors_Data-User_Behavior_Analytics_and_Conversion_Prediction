@@ -121,9 +121,10 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
 
 ### 5. Insights & Summary
 
-<img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Ranked_Feature_Importance_Generated_by_Random_Forest.png">  
+<img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Ranked_Feature_Importance_Generated_by_Random_Forest.png"> 
+
 - Top 10 features analysis
-  - 1. **demo_page_total_stayTime**: the longer time a user spent in ‘demo’ page is, the more likely the user will sign up. And its feature importance is larger than those of 'index_page_total_stayTime', 'about_page_total_stayTime' and courses_page_total_stayTime', which shows user is more likely to visit our 'demo' page than the others.
+  - **demo_page_total_stayTime**: the longer time a user spent in ‘demo’ page is, the more likely the user will sign up. And its feature importance is larger than those of 'index_page_total_stayTime', 'about_page_total_stayTime' and courses_page_total_stayTime', which shows user is more likely to visit our 'demo' page than the others.
   - 2. **index_page_total_stayTime**: the same idea with 'demo_page_total_stayTime', and its feature importance is larger than those of 'about_page_total_stayTime' and courses_page_total_stayTime'.
   - 3. **pages_viewed_counts**: the more pages a user views, the more likely the user will sign up.
   - 4. **click_counts**: the more click a user performs, the more likely the user will sign up.
@@ -136,12 +137,12 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
 
 <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Conversion_Funnel.png">  
 - Funnel Analysis
-  - **note**: 
-    - Here we define **signup** with the action 'click_send_cellphone', which means 'dist_id' attemps to sign up an account.
-    - We define **signup successfully** with 'isSuccess' property of 'formSubmit' is 'True'.
-    - We define **apply_for_trial** with 'name' property of 'btnClick' is 'request'.
   - **button_click_rate** is only 38.85%, most users do not click buttons on pages, perhaps the wording or color of our buttons are not attractive enough.    
   - **apply_for_trial_rate** is only 18.18%, most users do not click 'request' buttons on pages, perhaps our service description is not attractive enough.    
   - **signup_to_apply_for_trial_rate** is only 23.79%, most users who clicked 'request' button at the beginning did not apply when they were asked to provide phone number, perhaps the users care about personal privacy.   
   - **signup_rate** is only 4.32%, most users who viewed the webpage did not attempt to sign up, the same idea with 'apply_for_trial_rate'.
   - **successfully_signup_rate** is 91.22%, we lost nearly 9% of users who attempting to signup, perhaps the efficiency of our sign up process still need to improve.
+  - **note**: 
+    - Here we define **signup** with the action 'click_send_cellphone', which means 'dist_id' attemps to sign up an account.
+    - We define **signup successfully** with 'isSuccess' property of 'formSubmit' is 'True'.
+    - We define **apply_for_trial** with 'name' property of 'btnClick' is 'request'.
