@@ -18,6 +18,7 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
 3. Feature Engineering
 4. Model Fitting, Models Comparison and HyperParameter Tuning
 5. Insights & Summary
+6. Next step
 
 
 ## Analysis Details
@@ -28,7 +29,7 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
 - Select related properties to generate Dataframe
 - [**Detailed Code**](https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/1_Log_Data%20Processing.ipynb)
 
-### 1. EDA
+### 2. EDA
 - Select identifier
 - Numeric variables
   - **page_stayTime**: 
@@ -118,6 +119,7 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
 - Random Forest HyperParameter Tuning with Grid Search
   - **AUC** of test data is **0.9638** with **Random Forest HyperParameter Tuning with Grid Search**, is slightly better than that of previous **Random Forest** with **0.9591**
   - we select this model to explore the features importance to get some insights.
+- [**Detailed Code**](https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/4_Model_Fitting_and_Insights.ipynb) 
 
 ### 5. Insights & Summary
 
@@ -147,3 +149,27 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
     - Here we define **signup** with the action 'click_send_cellphone', which means 'dist_id' attemps to sign up an account.
     - We define **signup successfully** with 'isSuccess' property of 'formSubmit' is 'True'.
     - We define **apply_for_trial** with 'name' property of 'btnClick' is 'request'.
+  
+- Page_stayTime Analysis
+
+<img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/page_stayTime.png"> 
+
+  - The plot shows that most of user stayed in the page for less than 1 second(10^-1), and the 75 percentile 'page_stayTime' value is 0.226 second, which means most of the users might leave when the page was loading.
+  - Only 11.41 % of the people who clicked the functional pages stayed more than 3 seconds
+
+- Insights and Recommendations
+  - We should improve our page quality, given the high feature importance of 'pages_total_stayTime' and very low percent of users stayed in our pages more than 3 seconds.
+    - Like: hire web UX designer to improve the layout of our pages, especially 'demo' page and 'index' page, modify the wording or color of our buttons, polish our service description.
+  - We should consider providing other registration options and improve efficiency of our sign up process, given low 'signup_to_apply_for_trial_rate' and low 'successfully_signup_rate'.
+    - Like: allow users to sign up with e-mail or social network accounts.
+  - We should make adjustment to product promotion and campaign strategy, given most our campaigns have no significant effect.
+    - Note: as we don't know the current product promotion and campaign strategy of sensordata, we analyze two different scenarios as below:
+      - 1/ if sensordata had already invested lots of money to product promotion and campaign, it should adjust the investment allocation and invest more budget in 'Baidu', which has relatively better performance than the medias.
+      - 2/ if sensordata did not invest much product promotion and campaign before, it should allocate more budget in this area, 'baidu', '36kr', 'sogou' and 'google' would be good choices, especially 'baidu' which contributed times of referred users than the other hosts.
+
+
+### 6. Next step
+  - Besides the insights mentioned above, I think there are aspects we can further dive deep, like:
+    - Detailed analysis on different medium and campaign contributions, try to figure out which channels to invest and how to allocate the budgets.
+    - Detailed analysis on user behavior on specific pages, try to figure out which part of the page users pay most attention to, improve the content of interest and redesign the sections that are not valued.
+    - It’s also important to track performance over time. If we have more data, we can see whether we’re improving or not, by comparing funnels for each month.
