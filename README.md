@@ -23,7 +23,8 @@ Log Description for detailed description please refer to: https://github.com/wil
 - Identify types of events
 - Identify properties of events
 - Select related properties to generate Dataframe
-- Details please refer to: https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/Log%20Data%20Processing.ipynb
+- Details please refer to code: https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/1_Log_Data%20Processing.ipynb
+[sklearn grid search tutorial (with cross validation)](http://scikit-learn.org/stable/modules/grid_search.html#grid-search)
 
 ### 1. EDA
 - Select identifier
@@ -65,3 +66,4 @@ Log Description for detailed description please refer to: https://github.com/wil
       - If we plan to improve the layout of our pages, the pages these buttons link to should have high priority.
 
 - Select features
+- Details please refer to code:
