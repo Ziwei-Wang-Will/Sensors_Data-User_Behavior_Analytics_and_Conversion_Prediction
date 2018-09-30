@@ -17,7 +17,7 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
 2. EDA
 3. Feature Engineering
 4. Model Fitting, Models Comparison and HyperParameter Tuning
-5. Insights & Summary
+5. Analysis, Insights and Recommendations
 6. Next Step
 
 
@@ -116,12 +116,13 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
   - **Random Forest with bootstraps for imbalance dataset**
     - **AUC** of test data is **0.9595** with **Random Forest with bootstraps for imbalance dataset**, is close to that of **Random Forest with the imbalance dataset** with **0.9591**.  
       - **Reason**: Our Random forest has already performed greatly with the imbalance dataset and do not need to balance the dataset.
-- Random Forest HyperParameter Tuning with Grid Search
+    - Then we tried HyperParameter Tuning with Grid Search for Random Forest, to figure out whether we can do better.
+- **Random Forest HyperParameter Tuning with Grid Search**
   - **AUC** of test data is **0.9638** with **Random Forest HyperParameter Tuning with Grid Search**, is slightly better than that of previous **Random Forest** with **0.9591**
   - we select this model to explore the features importance to get some insights.
 - [**Detailed Code**](https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/4_Model_Fitting_and_Insights.ipynb) 
 
-### 5. Insights & Summary
+### 5. Analysis, Insights and Recommendations
 
 <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Ranked_Feature_Importance_Generated_by_Random_Forest.png"> 
 
@@ -157,11 +158,11 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
   - Only 11.41 % of the people who clicked the functional pages stayed more than 3 seconds
 
 - Insights and Recommendations
-  - We should improve our page quality, given the high feature importance of 'pages_total_stayTime' and very low percent of users stayed in our pages more than 3 seconds.
+  - Improve our page quality, given the high feature importance of 'pages_total_stayTime' and very low percent of users stayed in our pages more than 3 seconds.
     - Like: hire web UX designer to improve the layout of our pages, especially 'demo' page and 'index' page, modify the wording or color of our buttons, polish our service description.
-  - We should consider providing other registration options and improve efficiency of our sign up process, given low 'signup_to_apply_for_trial_rate' and low 'successfully_signup_rate'.
+  - Consider providing other registration options and improve efficiency of our sign up process, given low 'signup_to_apply_for_trial_rate' and low 'successfully_signup_rate'.
     - Like: allow users to sign up with e-mail or social network accounts.
-  - We should make adjustment to product promotion and campaign strategy, given most our campaigns have no significant effect.
+  - Make adjustment to product promotion and campaign strategy, given most our campaigns have no significant effect.
     - Note: as we don't know the current product promotion and campaign strategy of sensordata, we analyze two different scenarios as below:
       - 1/ if sensordata had already invested lots of money to product promotion and campaign, it should adjust the investment allocation and invest more budget in 'Baidu', which has relatively better performance than the medias.
       - 2/ if sensordata did not invest much product promotion and campaign before, it should allocate more budget in this area, 'baidu', '36kr', 'sogou' and 'google' would be good choices, especially 'baidu' which contributed times of referred users than the other hosts.
