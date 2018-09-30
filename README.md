@@ -150,10 +150,9 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
     - We define **signup successfully** with 'isSuccess' property of 'formSubmit' is 'True'.
     - We define **apply_for_trial** with 'name' property of 'btnClick' is 'request'.
   
-- Page_stayTime Analysis
-
 <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/page_stayTime.png"> 
 
+- Page_stayTime Analysis
   - The plot shows that most of user stayed in the page for less than 1 second(10^-1), and the 75 percentile 'page_stayTime' value is 0.226 second, which means most of the users might leave when the page was loading.
   - Only 11.41 % of the people who clicked the functional pages stayed more than 3 seconds
 
