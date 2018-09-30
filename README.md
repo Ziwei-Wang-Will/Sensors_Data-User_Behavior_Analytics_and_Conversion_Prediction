@@ -2,6 +2,9 @@
 
 <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Sensors_Data_Image.jpg">
 
+- [**Report**](https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/Sensors_Data_Project_Report.pdf)
+- [**Code**](https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/tree/master/code)
+
 ## Project Objectives
 
 Sensorsdata is a leading China-based and rapidly growing big data company and interested in **User-behavior Analytics and Conversion Prediction**. To help explore this question, they have provided log data containing tens of thousands of log information of Sensorsdata main webpage for a week. 
