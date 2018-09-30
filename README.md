@@ -124,9 +124,8 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
 
 ### 5. Analysis, Insights and Recommendations
 
-<img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Ranked_Feature_Importance_Generated_by_Random_Forest.png"> 
-
 - Top 10 features analysis
+  - <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Ranked_Feature_Importance_Generated_by_Random_Forest.png"> 
   - **demo_page_total_stayTime**: the longer time a user spent in ‘demo’ page is, the more likely the user will sign up. And its feature importance is larger than those of 'index_page_total_stayTime', 'about_page_total_stayTime' and courses_page_total_stayTime', which shows user is more likely to visit our 'demo' page than the others.
   - **index_page_total_stayTime**: the same idea with 'demo_page_total_stayTime', and its feature importance is larger than those of 'about_page_total_stayTime' and courses_page_total_stayTime'.
   - **pages_viewed_counts**: the more pages a user views, the more likely the user will sign up.
@@ -138,9 +137,8 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
   - **latest_referrer_host_bin_sensordata**: Most of users visit our pages from sensordata website without any 'referrer_host', which means most of campaigns except 'baidu' have no positive effects.
   - **city_bin_others**: the feature importance of 'city_bin_others' is larger than those of other 'city_bin' values, like 'city_bin_Beijing', 'city_bin_Shanghai', which means signup rate may be random among cities.
 
-<img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Conversion_Funnel.png">  
-
 - Funnel Analysis
+  - <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Conversion_Funnel.png">  
   - **button_click_rate** is only 38.85%, most users do not click buttons on pages, perhaps the wording or color of our buttons are not attractive enough.    
   - **apply_for_trial_rate** is only 18.18%, most users do not click 'request' buttons on pages, perhaps our service description is not attractive enough.    
   - **signup_to_apply_for_trial_rate** is only 23.79%, most users who clicked 'request' button at the beginning did not apply when they were asked to provide phone number, perhaps the users care about personal privacy.   
@@ -151,9 +149,8 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
     - We define **signup successfully** with 'isSuccess' property of 'formSubmit' is 'True'.
     - We define **apply_for_trial** with 'name' property of 'btnClick' is 'request'.
   
-<img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/page_stayTime.png"> 
-
 - Page_stayTime Analysis
+  - <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/page_stayTime.png"> 
   - The plot shows that most of user stayed in the page for less than 1 second(10^-1), and the 75 percentile 'page_stayTime' value is 0.226 second, which means most of the users might leave when the page was loading.
   - Only 11.41 % of the people who clicked the functional pages stayed more than 3 seconds
 
