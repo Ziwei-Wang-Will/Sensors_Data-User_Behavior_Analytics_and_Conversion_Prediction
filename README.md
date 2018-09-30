@@ -120,8 +120,9 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
   - we select this model to explore the features importance to get some insights.
 
 ### 5. Insights & Summary
-- Top 10 features analysis
+
 <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Ranked_Feature_Importance_Generated_by_Random_Forest.png">  
+- Top 10 features analysis
   - 1. **demo_page_total_stayTime**: the longer time a user spent in ‘demo’ page is, the more likely the user will sign up. And its feature importance is larger than those of 'index_page_total_stayTime', 'about_page_total_stayTime' and courses_page_total_stayTime', which shows user is more likely to visit our 'demo' page than the others.
   - 2. **index_page_total_stayTime**: the same idea with 'demo_page_total_stayTime', and its feature importance is larger than those of 'about_page_total_stayTime' and courses_page_total_stayTime'.
   - 3. **pages_viewed_counts**: the more pages a user views, the more likely the user will sign up.
@@ -132,8 +133,9 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
   - 8. **is_first_time**: As we notice in the previous 'feature exploration' part, all users with 'is_first_time' value '1' did not sign up, which means highly interested users will come to register another time, we should give users more times to contract with us to make them sign up.
   9. **latest_referrer_host_bin_sensordata**: Most of users visit our pages from sensordata website without any 'referrer_host', which means most of campaigns except 'baidu' have no positive effects.
   10. **city_bin_others**: the feature importance of 'city_bin_others' is larger than those of other 'city_bin' values, like 'city_bin_Beijing', 'city_bin_Shanghai', which means signup rate may be random among cities.
-- Funnel Analysis
+
 <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Conversion_Funnel.png">  
+- Funnel Analysis
   - **note**: 
     - Here we define **signup** with the action 'click_send_cellphone', which means 'dist_id' attemps to sign up an account.
     - We define **signup successfully** with 'isSuccess' property of 'formSubmit' is 'True'.
