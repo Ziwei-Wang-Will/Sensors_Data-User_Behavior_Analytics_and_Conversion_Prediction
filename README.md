@@ -38,4 +38,15 @@ Log Description for detailed description please refer to: https://github.com/wil
   - **day**: 
     - Insights: 2017-03-11 and 2017-03-12 are weekends and have the least number of counts, perhaps users visit our website more for work purposes.
     - Create feature 'weekend': Values: '1' for weekend, '0' and weekdays
+  - **title**:
+    - Insights: 
+      - Users visit our ‘demo’ page, ‘user manual’ page and ‘product’ page most frequently. 
+      - If we plan to improve the layout of our pages, these three pages should have high priority.
+  - **latest_referrer_host**:
+    - Insights: 
+      - Most of empty ‘latest_referrer_host’ are directly from sensordata website. 
+      - The other users were referred mostly from 'baidu', '36kr', 'sogou' and 'google', especially 'baidu' which contributed times of referred users than the other hosts. 
+      - Thus, if we want to run marketing campaign, 'baidu' should be allocated more budget to.
+    - Create feature 'latest_referrer_host_bin': With values: 'sensordata', 'baidu' and 'others'
+
 - Select features
