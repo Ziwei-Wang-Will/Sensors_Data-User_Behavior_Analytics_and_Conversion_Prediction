@@ -18,7 +18,7 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
 3. Feature Engineering
 4. Model Fitting, Models Comparison and HyperParameter Tuning
 5. Insights & Summary
-6. Next step
+6. Next Step
 
 
 ## Analysis Details
@@ -168,7 +168,7 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
       - 2/ if sensordata did not invest much product promotion and campaign before, it should allocate more budget in this area, 'baidu', '36kr', 'sogou' and 'google' would be good choices, especially 'baidu' which contributed times of referred users than the other hosts.
 
 
-### 6. Next step
+### 6. Next Step
   - Besides the insights mentioned above, I think there are aspects we can further dive deep, like:
     - Detailed analysis on different medium and campaign contributions, try to figure out which channels to invest and how to allocate the budgets.
     - Detailed analysis on user behavior on specific pages, try to figure out which part of the page users pay most attention to, improve the content of interest and redesign the sections that are not valued.
