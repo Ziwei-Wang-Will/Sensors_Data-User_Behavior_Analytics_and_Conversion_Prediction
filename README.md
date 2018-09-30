@@ -125,17 +125,18 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
 
 - Top 10 features analysis
   - **demo_page_total_stayTime**: the longer time a user spent in ‘demo’ page is, the more likely the user will sign up. And its feature importance is larger than those of 'index_page_total_stayTime', 'about_page_total_stayTime' and courses_page_total_stayTime', which shows user is more likely to visit our 'demo' page than the others.
-  - 2. **index_page_total_stayTime**: the same idea with 'demo_page_total_stayTime', and its feature importance is larger than those of 'about_page_total_stayTime' and courses_page_total_stayTime'.
-  - 3. **pages_viewed_counts**: the more pages a user views, the more likely the user will sign up.
-  - 4. **click_counts**: the more click a user performs, the more likely the user will sign up.
-  - 5. **about_page_total_stayTime**: the same idea with 'demo_page_total_stayTime'.
-  - 6. **courses_page_total_stayTime**: the same idea with 'demo_page_total_stayTime'.
-  - 7. **latest_referrer_host_bin_baidu**: Users referred by 'baidu' are more likely to sign up than users referred by other channels.
-  - 8. **is_first_time**: As we notice in the previous 'feature exploration' part, all users with 'is_first_time' value '1' did not sign up, which means highly interested users will come to register another time, we should give users more times to contract with us to make them sign up.
-  9. **latest_referrer_host_bin_sensordata**: Most of users visit our pages from sensordata website without any 'referrer_host', which means most of campaigns except 'baidu' have no positive effects.
-  10. **city_bin_others**: the feature importance of 'city_bin_others' is larger than those of other 'city_bin' values, like 'city_bin_Beijing', 'city_bin_Shanghai', which means signup rate may be random among cities.
+  - **index_page_total_stayTime**: the same idea with 'demo_page_total_stayTime', and its feature importance is larger than those of 'about_page_total_stayTime' and courses_page_total_stayTime'.
+  - **pages_viewed_counts**: the more pages a user views, the more likely the user will sign up.
+  - **click_counts**: the more click a user performs, the more likely the user will sign up.
+  - **about_page_total_stayTime**: the same idea with 'demo_page_total_stayTime'.
+  - **courses_page_total_stayTime**: the same idea with 'demo_page_total_stayTime'.
+  - **latest_referrer_host_bin_baidu**: Users referred by 'baidu' are more likely to sign up than users referred by other channels.
+  - **is_first_time**: As we notice in the previous 'feature exploration' part, all users with 'is_first_time' value '1' did not sign up, which means highly interested users will come to register another time, we should give users more times to contract with us to make them sign up.
+  - **latest_referrer_host_bin_sensordata**: Most of users visit our pages from sensordata website without any 'referrer_host', which means most of campaigns except 'baidu' have no positive effects.
+  - **city_bin_others**: the feature importance of 'city_bin_others' is larger than those of other 'city_bin' values, like 'city_bin_Beijing', 'city_bin_Shanghai', which means signup rate may be random among cities.
 
 <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Conversion_Funnel.png">  
+
 - Funnel Analysis
   - **button_click_rate** is only 38.85%, most users do not click buttons on pages, perhaps the wording or color of our buttons are not attractive enough.    
   - **apply_for_trial_rate** is only 18.18%, most users do not click 'request' buttons on pages, perhaps our service description is not attractive enough.    
