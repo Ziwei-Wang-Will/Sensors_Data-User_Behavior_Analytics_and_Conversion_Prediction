@@ -28,7 +28,14 @@ Log Description for detailed description please refer to: https://github.com/wil
 ### 1. EDA
 - Select identifier
 - Numeric variables
-  - **page_stayTime**: Only 11.41 % of the people who clicked the functional pages stayed more than 3 seconds
+  - **page_stayTime**: 
+    - Insights: Only 11.41 % of the people who clicked the functional pages stayed more than 3 seconds
+    - Create feature "page_stayTime": Sum up the total stay time by pages.
 - Categorical variables
-  - **event**: Most users did not attempt to submit a form: page view(32620) -> btnClick(13866) -> click_send_cellphone(600) -> verify_cellphone_code(563) -> clickSubmit(513) -> formSubmit(791)
-  - Select features
+  - **event**: 
+    - Insights: Most users did not attempt to submit a form
+    - Sign_up Funnel: page view(32620) -> btnClick(13866) -> click_send_cellphone(600) -> verify_cellphone_code(563) -> clickSubmit(513) -> formSubmit(791)
+  - **day**: 
+    - Insights: 2017-03-11 and 2017-03-12 are weekends and have the least number of counts, perhaps users visit our website more for work purposes.
+    - Create feature 'weekend': Values: '1' for weekend, '0' and weekdays
+- Select features
