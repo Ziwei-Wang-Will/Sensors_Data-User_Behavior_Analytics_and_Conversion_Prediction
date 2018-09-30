@@ -27,10 +27,8 @@ Log Description for detailed description please refer to: https://github.com/wil
 
 ### 1. EDA
 - Select identifier
-
 - Numeric variables
   - **page_stayTime**: Only 11.41 % of the people who clicked the functional pages stayed more than 3 seconds
 - Categorical variables
   - **event**: Most users did not attempt to submit a form: page view(32620) -> btnClick(13866) -> click_send_cellphone(600) -> verify_cellphone_code(563) -> clickSubmit(513) -> formSubmit(791)
-  
-- Select features
+  - Select features
