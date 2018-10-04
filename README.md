@@ -27,18 +27,18 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
 ## Analysis Details
 
 ### 1. Log Data Processing
-- Identify types of events
-- Identify properties of events
-- Select related properties to generate Dataframe
+- **Identify types of events**
+- **Identify properties of events**
+- **Select related properties to generate Dataframe**
 - [**Detailed Code**](https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/1_Log_Data%20Processing.ipynb)
 
 ### 2. EDA
-- Select identifier
-- Numeric variables
+- **Select identifier**
+- **Numeric variables**
   - **page_stayTime**: 
     - Insights: Only 11.41 % of the people who clicked the functional pages stayed more than 3 seconds.
     - Create feature **page_stayTime**: Sum up the total stay time by pages.
-- Categorical variables
+- **Categorical variables**
   - **event**: 
     - Insights: Most users do not attempt to submit a form.
     - Sign_up Funnel: page view(32620) -> btnClick(13866) -> click_send_cellphone(600) -> verify_cellphone_code(563) -> clickSubmit(513) -> formSubmit(791)
@@ -71,22 +71,22 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
       - The mostly clicked buttons are 'request', 'demo', 'document' and 'product'.   
       - If we plan to improve the layout of our pages, the pages these buttons link to should have high priority.
 
-- Select features
+- **Select features**
 - [**Detailed Code**](https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/2_Data_Exploration_and_Cleaning.ipynb)
 
 ### User Level Feature Engineering
-- Feature generation
+- **Feature generation**
   - Create feautres **pages_total_stayTime**: Sum up the total stay time by pages per ‘dist_id’.
   - Create feautres **click_counts**: Sum up the click times per ‘dist_id’.
   - Create feautres **pages_viewed_counts**: Sum up the page viewed count per ‘dist_id’.
   - Create feautres **is_first_day**, **is_first_time** and **weekend**: corresponding median value per 'dist_id'.
   - Create feautres **latest_referrer_host_bin**, **latest_utm_source_bin**, **browser_bin**, **city_bin** and **model_bin**: corresponding the first value per 'dist_id'.
-- Transform data and define label
+- **Transform data and define label**
   - Converting categorical variables into dummy variables
   - Define label: We define 'signup' with the action 'click_send_cellphone', which means 'dist_id' attempts to sign up an account.
-- EDA with label
+- **EDA with label**
   - Scatter_matrix: 'click_counts' and 'pages_viewed_counts' are highly correlated with 'sign_up'.
-- Explore sign up rate split by features
+- **Explore sign up rate split by features**
   - **is_first_time**
     - Insights: All users with 'is_first_time' value '1' did not sign_up, which means highly interested users will come to register another time.
   - **weekend**
@@ -102,7 +102,7 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
 - [**Detailed Code**](https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/3_Feature_Engineering.ipynb)  
 
 ### 4. Model Fitting, Models Comparison and HyperParameter Tuning
-- Models comparison and reasoning
+- **Models comparison and reasoning**
   - **Logistic Regression**
     - **AUC** of test data is **0.9156** with **Logistic Regression**.
     - We tried to improve model performance with **Random Forest**.
@@ -120,14 +120,14 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
     - **AUC** of test data is **0.9595** with **Random Forest with bootstraps for imbalance dataset**, is close to that of **Random Forest with the imbalance dataset** with **0.9591**.  
       - **Reason**: Our Random forest has already performed greatly with the imbalance dataset and do not need to balance the dataset.
     - Then we tried HyperParameter Tuning with Grid Search for Random Forest, to figure out whether we can do better.
-- **Random Forest HyperParameter Tuning with Grid Search**
-  - **AUC** of test data is **0.9638** with **Random Forest HyperParameter Tuning with Grid Search**, is slightly better than that of previous **Random Forest** with **0.9591**
-  - we select this model to explore the features importance to get some insights.
+  - **Random Forest HyperParameter Tuning with Grid Search**
+    - **AUC** of test data is **0.9638** with **Random Forest HyperParameter Tuning with Grid Search**, is slightly better than that of previous **Random Forest** with **0.9591**
+    - we select this model to explore the features importance to get some insights.
 - [**Detailed Code**](https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/4_Model_Fitting_and_Insights.ipynb) 
 
 ### 5. Analysis, Insights and Recommendations
 
-- Top 10 features analysis
+- **Top 10 features analysis**
   - <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Ranked_Feature_Importance_Generated_by_Random_Forest.png"> 
   - **demo_page_total_stayTime**: the longer time a user spent in ‘demo’ page is, the more likely the user will sign up. And its feature importance is larger than those of 'index_page_total_stayTime', 'about_page_total_stayTime' and courses_page_total_stayTime', which shows user is more likely to visit our 'demo' page than the others.
   - **index_page_total_stayTime**: the same idea with 'demo_page_total_stayTime', and its feature importance is larger than those of 'about_page_total_stayTime' and courses_page_total_stayTime'.
@@ -140,7 +140,7 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
   - **latest_referrer_host_bin_sensordata**: Most of users visit our pages from sensordata website without any 'referrer_host', which means most of campaigns except 'baidu' have no positive effects.
   - **city_bin_others**: the feature importance of 'city_bin_others' is larger than those of other 'city_bin' values, like 'city_bin_Beijing', 'city_bin_Shanghai', which means signup rate may be random among cities.
 
-- Funnel Analysis
+- **Funnel Analysis**
   - <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Conversion_Funnel.png">  
   - **button_click_rate** is only 38.85%, most users do not click buttons on pages, perhaps the wording or color of our buttons are not attractive enough.    
   - **apply_for_trial_rate** is only 18.18%, most users do not click 'request' buttons on pages, perhaps our service description is not attractive enough.    
@@ -152,12 +152,12 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
     - We define **signup successfully** with 'isSuccess' property of 'formSubmit' is 'True'.
     - We define **apply_for_trial** with 'name' property of 'btnClick' is 'request'.
   
-- Page_stayTime Analysis
+- **Page_stayTime Analysis**
   - <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/page_stayTime.png"> 
   - The plot shows that most of user stayed in the page for less than 1 second(10^-1), and the 75 percentile 'page_stayTime' value is 0.226 second, which means most of the users might leave when the page was loading.
   - Only 11.41 % of the people who clicked the functional pages stayed more than 3 seconds
 
-- Insights and Recommendations
+- **Insights and Recommendations**
   - Improve our page quality, given the high feature importance of 'pages_total_stayTime' and very low percent of users stayed in our pages more than 3 seconds.
     - Like: hire web UX designer to improve the layout of our pages, especially 'demo' page and 'index' page, modify the wording or color of our buttons, polish our service description.
   - Consider providing other registration options and improve efficiency of our sign up process, given low 'signup_to_apply_for_trial_rate' and low 'successfully_signup_rate'.
@@ -169,7 +169,7 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
 
 
 ### 6. Next Step
-  - Besides the insights mentioned above, I think there are aspects we can further dive deep, like:
-    - Detailed analysis on different medium and campaign contributions, try to figure out which channels to invest and how to allocate the budgets.
-    - Detailed analysis on user behavior on specific pages, try to figure out which part of the page users pay most attention to, improve the content of interest and redesign the sections that are not valued.
-    - It’s also important to track performance over time. If we have more data, we can see whether we’re improving or not, by comparing funnels for each month.
+- Besides the insights mentioned above, I think there are aspects we can further dive deep, like:
+  - Detailed analysis on different medium and campaign contributions, try to figure out which channels to invest and how to allocate the budgets.
+  - Detailed analysis on user behavior on specific pages, try to figure out which part of the page users pay most attention to, improve the content of interest and redesign the sections that are not valued.
+  - It’s also important to track performance over time. If we have more data, we can see whether we’re improving or not, by comparing funnels for each month.
