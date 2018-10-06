@@ -109,20 +109,28 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
     - **AUC** of test data is **0.9156** with **Logistic Regression**.
     - We tried to improve model performance with **Random Forest**.
   - **Random Forest**
+    - Model Performance
+      - <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Model_Performance_RF.png" width="360" height="360">
     - **AUC** of test data is **0.9591** with **Random Forest**, better than that of **Logistic Regression** with **0.9156**.
       - **Reason**: There are feature interaction and non-linearity relationship between features and target in our data set, trees algorithms can deal with these problems while logistic regression cannot.
     - We tried to further improve model performance with **Gradient Boosting Trees**.
       - **Reason**: In general, **Gradient Boosting Trees** can perform better than **Random Forest**, because it additionally tries to find optimal linear combination of trees (assume final model is the weighted sum of predictions of individual trees) in relation to given train data. This extra tuning may lead to more predictive power.
   - **Gradient Boosting Trees**
+    - Model Performance
+      - <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Model_Performance_GDBT.png" width="360" height="360">
     - **AUC** of test data is **0.9586** with **Gradient Boosting Trees**, is close to that of **Random Forest** with **0.9591**.
       - **Reason**: Our **Random forest** has already performed greatly in this dataset and hard for **Gradient Boosting Trees** to perform better.
     - Thus, we chose **Random Forest** as our preferred model.
     - Then we tried to implement **Random Forest with bootstraps for imbalance dataset** to check if balance dataset can improve model performance?
   - **Random Forest with bootstraps for imbalance dataset**
+    - Model Performance
+      - <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Model_Performance_RF_Bootstrap.png" width="360" height="360">
     - **AUC** of test data is **0.9595** with **Random Forest with bootstraps for imbalance dataset**, is close to that of **Random Forest with the imbalance dataset** with **0.9591**.  
       - **Reason**: Our Random forest has already performed greatly with the imbalance dataset and do not need to balance the dataset.
     - Then we tried HyperParameter Tuning with Grid Search for Random Forest, to figure out whether we can do better.
   - **Random Forest HyperParameter Tuning with Grid Search**
+    - Model Performance
+      - <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Model_Performance_RF_GS.png" width="360" height="360">
     - **AUC** of test data is **0.9638** with **Random Forest HyperParameter Tuning with Grid Search**, is slightly better than that of previous **Random Forest** with **0.9591**
     - we select this model to explore the features importance to get some insights.
 - [**Detailed Code**](https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/4_Model_Fitting_and_Insights.ipynb) 
