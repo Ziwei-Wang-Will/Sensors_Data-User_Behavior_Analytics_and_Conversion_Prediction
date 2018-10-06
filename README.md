@@ -104,6 +104,8 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
 ### 4. Model Fitting, Models Comparison and HyperParameter Tuning
 - **Models comparison and reasoning**
   - **Logistic Regression**
+    - Model Performance
+      - <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Model_Performance_LR.png" width="360" height="360">
     - **AUC** of test data is **0.9156** with **Logistic Regression**.
     - We tried to improve model performance with **Random Forest**.
   - **Random Forest**
