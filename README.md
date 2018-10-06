@@ -131,7 +131,7 @@ Data is given as txt file whereas data is in JSON format. Dataset contains cache
   - **Random Forest HyperParameter Tuning with Grid Search**
     - Model Performance
       - <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Model_Performance_RF_GS.png" width="360" height="360">
-    - **AUC** of test data is **0.9638** with **Random Forest HyperParameter Tuning with Grid Search**, is slightly better than that of previous **Random Forest** with **0.9591**
+    - **AUC** of test data is **0.9617** with **Random Forest HyperParameter Tuning with Grid Search**, is slightly better than that of previous **Random Forest** with **0.9591**
     - we select this model to explore the features importance to get some insights.
 - [**Detailed Code**](https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/4_Model_Fitting_and_Insights.ipynb) 
 
