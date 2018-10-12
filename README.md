@@ -1,4 +1,4 @@
-# Sensors_Data - User_Behavior_Analytics_and_Conversion_Prediction
+# SENSORS_Data - User_Behavior_Analytics_and_Conversion_Prediction
 
 <img src="https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/images/Sensors_Data_Image.jpg" width="600" height="240">
 
