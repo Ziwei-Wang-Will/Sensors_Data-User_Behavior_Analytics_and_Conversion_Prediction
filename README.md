@@ -76,7 +76,7 @@ Sensorsdata is a leading China-based and rapidly growing big data company and in
 - **Selected features**
 - [**Detailed Code and Plotting**](https://github.com/will-zw-wang/Sensors_Data-User_Behavior_Analytics_and_Conversion_Prediction/blob/master/code/2_Data_Exploration_and_Cleaning.ipynb)
 
-### User Level Feature Engineering
+### 3. User Level Feature Engineering
 - **Feature generation**
   - Created feautres **pages_total_stayTime**: Summed up the total stay time by pages per ‘dist_id’.
   - Created feautres **click_counts**: Summed up the click times per ‘dist_id’.
